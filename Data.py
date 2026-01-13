@@ -70,7 +70,21 @@ totalnum = a['fee_paid'].sum()
 print(totalnum)
 
 count1 = a['course'].value_counts()
-print(count1)
+# print(count1)
 
 count2 = a['city'].value_counts()
-print(count2)
+# print(count2)
+
+row_number = int(input("Enter the row number of student to update: "))
+if row_number in a.index:
+    new_name = input(f"Name {a.loc[row_number, 'student_name']} : ").strip().title()
+    if new_name:
+        a.loc[row_number, 'student_name'] = new_name
+    new_age = input(f"Age {a.loc[row_number, 'age']}: ")
+    if new_age:
+        a.loc[row_number, 'age'] = float(new_age)
+    new_course = input(f"Course {a.loc[row_number, 'course']}").strip().title()
+    if new_course:
+        a.loc[row_number, 'course'] = new_course
+    new_city = input(f"City {a.loc[row_number, 'city']}").strip().title()
+print(a)
