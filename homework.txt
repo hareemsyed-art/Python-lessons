@@ -1,0 +1,80 @@
+1. Write a function that takes a name and prints "Hello, <name>"
+def name(b):
+    print(f"Hello, {b}")
+a = input("Enter your name: ")
+name("Hareem")
+name(a)
+
+2. Write a function that takes two numbers and returns the largest one.
+def n(a, b):
+    
+num1 = input("Enter the first number : ")
+num2 = input("Enter the second number: ")
+n(90, 85)
+n()
+
+def n(a, b):
+    if a > b:
+        print(a, "Is the largest")
+    else:
+        print(b, "Is the largest")
+
+num1 = input("Enter the first number : ")
+num2 = input("Enter the second number: ")
+n(90, 85)
+n(num1, num2)
+
+3. Write a function that takes a list and returns the sum of all elements.
+def a(x):
+    sum = 0
+    for i in x:
+        sum = sum + i
+    print(sum)
+b = [4, 10, 480]
+a(b)
+
+4. Write a function that counts how many even numbers are in a list.
+def even_numbers(a):
+    if a % 2 == 0:
+        print("even")
+    else:
+        print("odd")
+b = [4, 10, 480]
+even_numbers(b)
+even_numbers(12, 23)
+
+5. Write a function that takes marks and returns:
+- "Fail" if marks < 50
+- "Pass" if marks ≥ 50
+- "Excellent" if marks ≥ 85
+def a(b):
+    if b < 50:
+        print("Fail")
+    elif b >= 50:
+        print("Pass")
+    elif b >= 85:
+        print("Excellent")
+marks = int(input("Enter your marks here: "))
+a(marks)
+
+6. Write a function that takes a list of marks and returns the average.
+
+#Write a function that takes a list of marks and returns the average.
+def a(x):
+    length = x.len()
+    avg = 0
+    for i in x:
+        avg = i + i + i / length
+    print(avg).len
+b = [89, 100, 80]
+a(b)
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def a(self):
+        print(f"Hi, my name {self.name}, and I'm {self.age} years old!")
+obj1 = Student("Hareem", 11)
+obj1.a()
+
