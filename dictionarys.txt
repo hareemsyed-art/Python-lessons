@@ -1,0 +1,19 @@
+dictionary = {
+    "name" : "Hareem",
+    "age": 12,
+    "city" : "Islamabad"
+}
+# print(dictionary["name"])
+# print(dictionary.get("name"))
+# dictionary['age'] = 13
+# print(dictionary)
+# dictionary['country'] = "Pakistan"
+# print(dictionary)
+# dictionary.pop("city")
+# print(dictionary)
+# for i in dictionary.keys():
+#     print(i)
+# for j in dictionary.values():
+#     print(j)
+for key, value in dictionary.items():
+    print(key, value)
