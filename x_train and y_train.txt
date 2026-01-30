@@ -1,0 +1,8 @@
+X_train = the "questions" (age + pocket money) for the first ~70–80 kids
+→ This is what the computer studies / looks at while learning
+y_train (little y = answers) = the real number of candies those same 70–80 kids actually ate
+→ This is the correct answer sheet the computer uses to check if its guesses are getting better during practice
+X_test = the "questions" (age + pocket money) for the remaining ~20–30 kids
+→ These are kept secret during learning — the computer never sees these questions or answers while studying
+y_test = the real number of candies those last 20–30 kids actually ate
+→ This is the surprise final exam! After the computer finishes learning, we give it only the X_test questions and see how close its guesses are to the real y_test answers.
