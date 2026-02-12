@@ -1,0 +1,7 @@
+-- SELECT * FROM Students WHERE city LIKE "%Karachi%"
+-- SELECT * FROM Students WHERE city LIKE "%Karachi%" AND gender LIKE "%M%"
+-- SELECT * FROM Students ORDER BY name DESC
+-- SELECT city, COUNT(*) FROM Students GROUP BY city
+-- SELECT gender, COUNT(*) FROM Students GROUP BY gender
+-- SELECT city, AVG(age) FROM Students GROUP BY city
+-- SELECT city, MAX(age) AS the_max_age FROM Students GROUP BY city
