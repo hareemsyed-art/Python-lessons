@@ -1,0 +1,16 @@
+-- SELECT SUM(EmployeeProjects.hours_worked) AS sum_of_hours_worked, Employees.name, EmployeeProjects.hours_worked FROM Employees JOIN EmployeeProjects ON EmployeeProjects.employee_id = Employees.employee_id GROUP BY(EmployeeProjects.employee_id) ORDER BY EmployeeProjects.hours_worked DESC LIMIT(1)
+
+-- SELECT EmployeeProjects.employee_id, Projects.project_name, Employees.name FROM EmployeeProjects JOIN Projects ON EmployeeProjects.project_id = Projects.project_id JOIN Employees ON EmployeeProjects.employee_id = Employees.employee_id
+
+-- SELECT Employees.name, SUM(EmployeeProjects.hours_worked) AS total_hours FROM Employees JOIN EmployeeProjects ON EmployeeProjects.employee_id = Employees.employee_id GROUP BY(Employees.name)
+
+-- SELECT MAX(salary) AS second_highest_salary FROM Employees WHERE salary < LECT MAX(salary) AS second_highest_salary FROM Employees)
+
+-- SELECT * FROM Employees WHERE salary > (SELECT AVG(salary) AS avg_salary FROM Employees)
+
+-- SELECT AVG(salary) FROM Employees 
+
+-- UPDATE Employees SET salary = 55000 WHERE name LIKE "%Ali%"
+
+-- DELETE FROM Employees WHERE salary < 53000 
+-- DELETE FROM EmployeeProjects WHERE employee_id = 6
