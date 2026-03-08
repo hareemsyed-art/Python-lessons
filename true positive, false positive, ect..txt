@@ -1,0 +1,11 @@
+true positive:
+true positive is when the data says it is true and the model says it is true.
+
+false positive:
+false positive is when the model says it is false but the data says that it is not.
+
+true negative:
+true negative is when the data says that it is true but the model says it is not true.
+
+false negative:
+false negative is when the data is saying that it is false and the model is saying that it is false as well.
